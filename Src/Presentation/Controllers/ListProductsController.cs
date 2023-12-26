@@ -5,7 +5,7 @@ namespace ProductManagement.API.Src.Presentation.Controllers
 {
     [Route("api/products")]
     [ApiController]
-    public class ProductController : ControllerBase
+    public class ListProductsController : ControllerBase
     {
         [HttpGet]
         public IActionResult GetAll()
