@@ -1,4 +1,6 @@
-﻿namespace ProductManagement.API.Src.Domain.Entities
+﻿using ProductManagement.API.Src.Core.Dtos;
+
+namespace ProductManagement.API.Src.Domain.Entities
 {
     public class Product
     {
@@ -9,7 +11,7 @@
 
         public int Price { get; set; }
 
-        private Product (ProductProps props)
+        private Product (ProductDto props)
         {
             Id = Guid.NewGuid();
             Title = props.Title;
@@ -17,7 +19,7 @@
             Price = props.Price;
         }
 
-        public static Product Create(ProductProps props) 
+        public static Product Create(ProductDto props) 
         { 
             return new Product (props);
         }

@@ -1,4 +1,5 @@
-﻿using ProductManagement.API.Src.Data.Protocols;
+﻿using ProductManagement.API.Src.Core.Dtos;
+using ProductManagement.API.Src.Data.Protocols;
 using ProductManagement.API.Src.Domain.Entities;
 
 namespace ProductManagement.API.Src.Data.Usecases
@@ -7,7 +8,7 @@ namespace ProductManagement.API.Src.Data.Usecases
     {
         public Product Perform () 
         {
-            ProductProps props = new()
+            ProductDto props = new()
             { 
                 Title = "titulo de teste",
                 Description = "Description teste",

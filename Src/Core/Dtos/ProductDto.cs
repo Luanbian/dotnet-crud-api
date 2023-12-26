@@ -1,6 +1,6 @@
-﻿namespace ProductManagement.API.Src.Domain.Entities
+﻿namespace ProductManagement.API.Src.Core.Dtos
 {
-    public record ProductProps
+    public record ProductDto
     {
         public string Title { get; init; }
 
