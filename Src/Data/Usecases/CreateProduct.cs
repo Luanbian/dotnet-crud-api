@@ -1,8 +1,9 @@
-﻿using ProductManagement.API.Src.Domain.Entities;
+﻿using ProductManagement.API.Src.Data.Protocols;
+using ProductManagement.API.Src.Domain.Entities;
 
 namespace ProductManagement.API.Src.Data.Usecases
 {
-    public class CreateProduct
+    public class CreateProduct : CreateProductProtocol
     {
         public Product Perform () 
         {
