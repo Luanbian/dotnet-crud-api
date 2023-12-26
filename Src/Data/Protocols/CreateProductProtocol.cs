@@ -2,7 +2,7 @@
 
 namespace ProductManagement.API.Src.Data.Protocols
 {
-    public interface CreateProductProtocol
+    public interface ICreateProductProtocol
     {
         Product Perform();
     }

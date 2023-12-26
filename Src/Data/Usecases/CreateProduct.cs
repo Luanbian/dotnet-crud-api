@@ -3,11 +3,11 @@ using ProductManagement.API.Src.Domain.Entities;
 
 namespace ProductManagement.API.Src.Data.Usecases
 {
-    public class CreateProduct : CreateProductProtocol
+    public class CreateProduct : ICreateProductProtocol
     {
         public Product Perform () 
         {
-            ProductProps props = new ProductProps () 
+            ProductProps props = new()
             { 
                 Title = "titulo de teste",
                 Description = "Description teste",
