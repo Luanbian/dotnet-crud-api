@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ProductManagement.API.Src.Data.Protocols;
 using ProductManagement.API.Src.Domain.Entities;
+using System.Diagnostics;
 
 namespace ProductManagement.API.Src.Presentation.Controllers
 {
@@ -14,6 +15,7 @@ namespace ProductManagement.API.Src.Presentation.Controllers
         [HttpPost]
         public IActionResult Handle()
         {
+            Debug.WriteLine("Chegou no controller");
             Product product = create.Perform();
             return Ok(product);
         }
