@@ -2,15 +2,16 @@
 {
     public class Product
     {
-        private Guid Id { get; set; }
-        private string Title { get; set; }
+        public Guid Id { get; set; }
+        public string Title { get; set; }
 
-        private string? Description { get; set; }
+        public string? Description { get; set; }
 
-        private int Price { get; set; }
+        public int Price { get; set; }
 
         private Product (ProductProps props)
         {
+            Id = Guid.NewGuid();
             Title = props.Title;
             Description = props.Description;
             Price = props.Price;
