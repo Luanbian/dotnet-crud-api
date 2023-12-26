@@ -30,3 +30,4 @@ C:\Users\usuario\source\repos\ProductManagement\ProductManagement.API\obj\Debug\
 C:\Users\usuario\source\repos\ProductManagement\ProductManagement.API\obj\Debug\net8.0\ProductManagement.API.pdb
 C:\Users\usuario\source\repos\ProductManagement\ProductManagement.API\obj\Debug\net8.0\ProductManagement.API.genruntimeconfig.cache
 C:\Users\usuario\source\repos\ProductManagement\ProductManagement.API\obj\Debug\net8.0\ref\ProductManagement.API.dll
+C:\Users\usuario\source\repos\ProductManagement\ProductManagement.API\obj\Debug\net8.0\ProductManagement.API.sourcelink.json

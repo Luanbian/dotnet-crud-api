@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ProductManagement.API.Controllers
+namespace ProductManagement.API.Src.Presentation.Controllers
 {
     [Route("api/products")]
     [ApiController]
