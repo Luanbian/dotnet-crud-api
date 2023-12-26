@@ -6,7 +6,7 @@ using System.Diagnostics;
 
 namespace ProductManagement.API.Src.Presentation.Controllers
 {
-    [Route("api/products/create")]
+    [Route("api/products")]
     [ApiController]
     public class CreateProductController(ICreateProductProtocol create) : ControllerBase
     {
