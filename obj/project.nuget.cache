@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fBHI1n1aEsvQ6XTJufmq0RwnDWjOGp+pVo7N++R3YStF7GfexDGW/9mv4Q7SRIr+ZwGL1prsFZWVn7FiYJkZtA==",
+  "dgSpecHash": "gfwHftVg8iUGxx9W7e3wpnXtpnp/te2nojB54sXYajwRGI/dV3bIMq+3FpgunmV0stwhvZY5u7gmTfS7JBN/SA==",
   "success": true,
   "projectFilePath": "C:\\Users\\usuario\\source\\repos\\ProductManagement\\ProductManagement.API\\ProductManagement.API.csproj",
   "expectedPackageFiles": [
@@ -30,8 +30,8 @@
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
-    "C:\\Users\\usuario\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
-    "C:\\Users\\usuario\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\7.0.0\\pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\mysqlconnector\\2.3.1\\mysqlconnector.2.3.1.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\8.0.0-beta.2\\pomelo.entityframeworkcore.mysql.8.0.0-beta.2.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

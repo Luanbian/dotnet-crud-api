@@ -1,5 +1,6 @@
 using ProductManagement.API.Src.Data.Protocols;
 using ProductManagement.API.Src.Data.Usecases;
+using ProductManagement.API.Src.Infra.EntityFramework;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,7 @@ builder.Services.AddSwaggerGen();
 
 // services
 builder.Services.AddScoped<ICreateProductProtocol, CreateProduct>();
+builder.Services.AddScoped<AppDbContext>();
 
 var app = builder.Build();
 
