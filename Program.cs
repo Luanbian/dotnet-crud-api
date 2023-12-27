@@ -18,6 +18,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ICreateProductProtocol, CreateProduct>();
 builder.Services.AddScoped<AppDbContext>();
 builder.Services.AddScoped<ICreateRepository<Product>, EFCreateProduct>();
+builder.Services.AddScoped<IFindRepository<Product>, EFFindProduct>();
 
 var app = builder.Build();
 
