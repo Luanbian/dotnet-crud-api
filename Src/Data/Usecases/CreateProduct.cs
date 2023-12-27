@@ -9,13 +9,13 @@ namespace ProductManagement.API.Src.Data.Usecases
     {
         private readonly ICreateRepository<Product> create = repository;
 
-        public Product Perform()
+        public Product Perform(ProductDto data)
         {
             ProductDto props = new()
             { 
-                Title = "titulo de teste",
-                Description = "Description teste",
-                Price = 1
+                Title = data.Title,
+                Description = data.Description,
+                Price = data.Price
             };
             Product product = Product.Create (props);
             create.Exec(product);
