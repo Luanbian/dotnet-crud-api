@@ -4,17 +4,14 @@ using ProductManagement.API.Src.Infra.Repositories.Protocols;
 
 namespace ProductManagement.API.Src.Infra.Repositories
 {
-    public class EFCreateProduct : ICreateRepository<Product>
+    public class EFCreateProduct(AppDbContext appDbContext) : ICreateRepository<Product>
     {
-        private readonly AppDbContext repository;
-        public EFCreateProduct(AppDbContext appDbContext) { 
-            repository = appDbContext;
-        }
-        public async Task<Product> Exec(Product data)
+        private readonly AppDbContext db = appDbContext;
+
+        public void Exec(Product data)
         {
-           repository.Products.Add(data);
-           await repository.SaveChangesAsync();
-           return data;
+           db.Products.Add(data);
+           db.SaveChanges();
         }
     }
 }
