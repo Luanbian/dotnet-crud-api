@@ -14,9 +14,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// services
+// usecases
 builder.Services.AddScoped<ICreateProductProtocol, CreateProduct>();
+builder.Services.AddScoped<IListAllProductProtocol, ListAllProduct>();
+
+// db
 builder.Services.AddScoped<AppDbContext>();
+
+//repositories
 builder.Services.AddScoped<ICreateRepository<Product>, EFCreateProduct>();
 builder.Services.AddScoped<IFindRepository<Product>, EFFindProduct>();
 
