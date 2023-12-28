@@ -10,10 +10,11 @@ namespace ProductManagement.API.Src.Data.Usecases
         private readonly IFindRepository<Product> repository = find;
         public List<Product> Perform(GetAllControllerProps data)
         {
+            if (data == null) return repository.FindAll();
             return repository.FindBy(product =>
-                product.Title == data.Title && 
-                product.Price == data.Price &&
-                product.Description == data.Description
+                (data.Title == null || product.Title == data.Title) &&
+                (!data.Price.HasValue || product.Price == data.Price) &&
+                (data.Description == null || product.Description == data.Description)
             );
         }
     }
