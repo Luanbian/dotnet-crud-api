@@ -4,6 +4,7 @@ using ProductManagement.API.Src.Domain.Entities;
 using ProductManagement.API.Src.Infra.EntityFramework;
 using ProductManagement.API.Src.Infra.Repositories;
 using ProductManagement.API.Src.Infra.Repositories.Protocols;
+using ProductManagement.API.Src.Presentation.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,7 @@ builder.Services.AddSwaggerGen();
 // usecases
 builder.Services.AddScoped<ICreateProductProtocol, CreateProduct>();
 builder.Services.AddScoped<IListAllProductProtocol, ListAllProduct>();
+builder.Services.AddScoped<IUpdateProductProtocol, UpdateProduct>();
 
 // db
 builder.Services.AddScoped<AppDbContext>();
@@ -24,6 +26,7 @@ builder.Services.AddScoped<AppDbContext>();
 //repositories
 builder.Services.AddScoped<ICreateRepository<Product>, EFCreateProduct>();
 builder.Services.AddScoped<IFindRepository<Product>, EFFindProduct>();
+builder.Services.AddScoped<IUpdateRepository<UpdateControllerProps>, EFUpdateProduct>();
 
 var app = builder.Build();
 

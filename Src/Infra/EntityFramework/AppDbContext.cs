@@ -11,7 +11,7 @@ namespace ProductManagement.API.Src.Infra.EntityFramework
         {
             var config = new ConfigurationBuilder().AddUserSecrets<Product>().Build();
             string connectionString = config.GetConnectionString("MyDatabaseConnection")
-                ?? throw new InvalidOperationException("A string de conexão não pode ser nula."); ;
+                ?? throw new InvalidOperationException("A string de conexão não pode ser nula.");
             optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
             base.OnConfiguring(optionsBuilder);
         }
