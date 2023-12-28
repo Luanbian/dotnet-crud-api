@@ -12,20 +12,15 @@ namespace ProductManagement.API.Src.Infra.Repositories
         public void Update(Guid id, UpdateControllerProps data)
         {
             Product? product = db.Products.Find(id);
-            if (product != null)
-            {
-                if (data.Title != null) product.Title = data.Title;
-                else product.Title = product.Title;
+            if (product == null) return;
 
-                if (data.Description != null) product.Description = data.Description;
-                else product.Description = product.Description;
+            product.Title = data.Title ?? product.Title;
+            product.Description = data.Description ?? product.Description;
+            product.Price = data.Price ?? product.Price;
 
-                if (data.Price != null) product.Price = (int)data.Price;
-                else product.Price = product.Price;
-
-                db.Products.Update(product);
-                db.SaveChanges();
-            }
+            db.Products.Update(product);
+            db.SaveChanges();
+            
         }
     }
 }
