@@ -8,7 +8,7 @@ namespace ProductManagement.API.Src.Data.Usecases
         private readonly IDeleteRepository repository = delete;
         public void Perform(string id)
         {
-            repository.Delete(id);
+            repository.Delete(new Guid(id));
         }
     }
 }

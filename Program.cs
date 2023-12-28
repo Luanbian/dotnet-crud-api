@@ -19,6 +19,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ICreateProductProtocol, CreateProduct>();
 builder.Services.AddScoped<IListAllProductProtocol, ListAllProduct>();
 builder.Services.AddScoped<IUpdateProductProtocol, UpdateProduct>();
+builder.Services.AddScoped<IDeleteProductProtocol, DeleteProduct>();
 
 // db
 builder.Services.AddScoped<AppDbContext>();
@@ -27,6 +28,7 @@ builder.Services.AddScoped<AppDbContext>();
 builder.Services.AddScoped<ICreateRepository<Product>, EFCreateProduct>();
 builder.Services.AddScoped<IFindRepository<Product>, EFFindProduct>();
 builder.Services.AddScoped<IUpdateRepository<UpdateControllerProps>, EFUpdateProduct>();
+builder.Services.AddScoped<IDeleteRepository, EFDeleteProduct>();
 
 var app = builder.Build();
 
