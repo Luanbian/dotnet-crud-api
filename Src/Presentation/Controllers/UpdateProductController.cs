@@ -21,8 +21,8 @@ namespace ProductManagement.API.Src.Presentation.Controllers
         {
             try
             {
-            update.Perform(id, data);
-            return Ok("Atualizado");
+                update.Perform(id, data);
+                return Ok("Atualizado");
             } catch (Exception ex)
             {
                 return StatusCode(500, ex.Message);

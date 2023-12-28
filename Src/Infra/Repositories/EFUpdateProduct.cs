@@ -15,8 +15,15 @@ namespace ProductManagement.API.Src.Infra.Repositories
             if (product != null)
             {
                 if (data.Title != null) product.Title = data.Title;
+                else product.Title = product.Title;
+
                 if (data.Description != null) product.Description = data.Description;
+                else product.Description = product.Description;
+
                 if (data.Price != null) product.Price = (int)data.Price;
+                else product.Price = product.Price;
+
+                db.Products.Update(product);
                 db.SaveChanges();
             }
         }
